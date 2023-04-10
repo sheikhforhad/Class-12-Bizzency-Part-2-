@@ -1,0 +1,310 @@
+:root{
+    --primary-font: 'Open Sans', sans-serif;
+    --heading-font: 'Abril Fatface', cursive;
+    --secondary-heading: 'Ubuntu', sans-serif;
+    --primary-color: #0f2f44;
+    --hover-color: #ffc712;
+    --hover-background: #fff9e6;
+    --text-white: #fefefe;
+    --text-black: #222222;
+    --text-pink: #8484bf;
+    --service-background: #e9e9e9;
+}
+/* common css */
+*{
+    outline: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--primary-font);
+}
+h1,h2{
+    font-family: var(--heading-font);
+}
+h3,h4,h5,h6{
+    font-family: var(--secondary-heading);
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.w-100{
+    width: 100%;
+}
+.w-50{
+    width: 50%;
+}
+
+/* Topbar Start */
+#topbar{
+    background: var(--primary-color);
+    color: var(--text-white);
+    padding: 16px 0px;
+}
+#topbar .row{
+    justify-content: space-between;
+}
+/* Navbar Start */
+#nav .row{
+    justify-content: space-between;
+    align-items: center;
+    
+}
+#nav ul li a{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-black);
+    padding: 40px 19px;
+    display: inline-block;
+    font-family: var(--secondary-heading);
+    transition: 0.4s;   
+}
+#nav ul li button{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid #999999;
+    color: #999999;
+    background: var(--text-white);
+    align-items: center;
+    line-height: 28px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: 0.4s;  
+}
+#nav ul li:hover a,
+#nav ul li button:hover{
+    background: var(--hover-background);
+    color: var(--hover-color);
+    border-color: var(--hover-background);
+}
+
+/* Banner Start */
+#banner {
+    height: 596px;
+    background: url(../img/bg_image.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#banner .container {
+    height: 100%;
+}
+#banner .row {
+    height: 100%;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+#banner h2 {
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 70px;
+    color: #0f2f44;
+    font-family: var(--secondary-heading);
+}
+#banner h1 {
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 70px;
+    text-transform: uppercase;
+    line-height: 70px;
+    color: #0f2f44;
+    font-family: var(--heading-font);
+}
+#banner h3{
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--text-pink);
+    letter-spacing: 12px;
+    font-family: var(--secondary-heading);
+
+}
+#banner p {
+    margin: 31px 0px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+#banner a {
+    font-size: 20px;
+    font-weight: 500;
+    background: #8383bf;
+    color: var(--text-white);
+    line-height: 24px;
+    font-family: var(--secondary-heading);
+    display: inline-block;
+    padding: 14px 19px;
+    border-radius: 5px;
+}
+
+#banner .banner_item button{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid var(--text-white);
+    color: #8484bf;
+    background: var(--text-white);
+    align-items: center;
+    line-height: 44px;
+    margin: 0px 20px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+#banner a:hover
+{
+    background-color: var(--hover-color);
+    border-radius: 5px;
+}
+#banner button:hover{
+    background-color: var(--hover-color);
+    border-radius: 50%;
+}
+
+/* About Section Start */
+
+#about .row {
+    width: 100%;
+    padding: 96px 0px;
+}
+#about .row .about_info{
+    width: 50%;
+}
+#about .row .about_image{
+    width: 50%;
+}
+#about .up_text p{
+    font-size: 14px;
+    font-weight: 300;
+    font-family: var(--secondary-heading);
+    color: var(--primary-color);
+    line-height: 14px;
+    padding-bottom: 10px;
+}
+#about  h1{
+    font-size: 32px;
+    font-family: var(--heading-font);
+    font-weight: 400;
+    color: var(--primary-color);
+    line-height: 32px;
+}
+#about .sub_text p{
+    font-family: var(--primary-font);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--primary-color);
+    padding: 20px 0px;
+}
+#about .sub_text .second_sub{
+    margin-left: 29px;
+}
+#about .about_info a{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--secondary-heading);
+    color: var(--primary-color);
+    padding: 14px 21px;
+    background: var(--text-white);
+    border: 1px solid var(--text-white);
+    margin-right: 20px;
+    transition: 0.4s;
+    box-shadow:  0px 5px 5px rgba(0,0,0,0.2);
+}
+#about .about_info a:hover{
+    background: var(--hover-color);
+    padding: 14px 20px;
+    border-radius: 5px;
+}
+
+/* Skill Section Start */
+#skill {
+    margin: 95px 0px;
+}
+#skill .skill_img img{
+    margin-left: -50px;
+    height: 486px;
+}
+#skill .skill_info{
+    text-align: right;
+}
+#skill .skill_info h5{
+    font-size: 14px;
+    font-weight: 300;
+    font-family: var(--secondary-heading);
+    color: var(--primary-color);
+}
+#skill .skill_info h2{
+    font-size: 32px;
+    font-weight: 400;
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+#skill .skill_info p{
+   margin: 33px 0px;
+   font-size: 16px;
+   font-weight: 400;
+   font-family: var(--primary-font);
+   color: var(--primary-color);
+}
+#skill .skill_info .skill_item_info{
+    width: 85%;
+}
+#skill .skill_info .skill_item_info h5,
+#skill .skill_info .skill_item_info span{
+    font-size: 14px;
+    font-weight: 500;
+    font-family: var(--secondary-heading);
+    color: var(--primary-color);
+    line-height: 44px;
+}
+#skill .skill_item{
+    align-items: center;
+    margin-bottom: 20px;
+}
+#skill .skill_item .skill_item_logo{
+    width: 15%;
+}
+#skill .skill_item .skill_item_logo img{
+    border: 10px solid white;
+    border-radius: 50%;
+    box-shadow:0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+}
+#skill .skill_item .skill_item_track{
+    width: 100%;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 10px;
+}
+#skill .skill_item .skill_perchant{
+    height: 10px;
+    margin-left: auto;
+    border-radius: 0 10px 10px 0;
+    position: relative;
+}
+#skill .skill_item .skill_perchant span{
+    position: absolute;
+    left: 0;
+    top: -40px;
+}
+/* Skill Section End */
+
+
+
+
+
+
